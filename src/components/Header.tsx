@@ -16,9 +16,7 @@ class Header extends React.Component<Props, State> {
     }
     render() {
         const textAlign : React.CSSProperties = {
-            display : "flex",
-            //width : '100%'
-            
+            display : "flex"
         }
         const plannindDeployHeader: React.CSSProperties = {
             width: "25%",

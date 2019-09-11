@@ -40,13 +40,7 @@ class App extends React.Component<Props, State> {
     private static updateCallback: (data: object) => void = null;
 
     public static update(newState: State) {
-        console.log('app ok');
-        console.log('app newState ');
-        console.log("app row[0][1] " + newState.essaie);
-        Main.update({
-            settings : newState.settings,
-            essaie : newState.essaie
-        });
+        Main.update(newState);
         if (typeof App.updateCallback === 'function') {
             App.updateCallback(newState);
         }

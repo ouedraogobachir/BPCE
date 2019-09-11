@@ -69,7 +69,6 @@ export class Visual implements IVisual {
         if (options.dataViews && options.dataViews[0]) {
         this.settings = Visual.parseSettings(options && options.dataViews && options.dataViews[0]);
             this.settings.dataPoint
-        //var canaux = options.dataViews[0].table.rows[0][0].toString();
         console.log(options.dataViews[0])
         App.update({
            settings : this.settings,

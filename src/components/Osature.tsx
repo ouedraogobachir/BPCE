@@ -146,8 +146,6 @@ export class Osature extends React.Component<{}, State> {
         }
     }
 
-    //public state: State = initialeState;
-
     public componentWillMount() {
         Osature.updateCallback = (newState: State): void => { this.setState(newState); };
     }

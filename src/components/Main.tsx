@@ -3,6 +3,7 @@ import { Component } from 'react';
 import Row from './Row';
 import Channel from './Channel';
 import Canaux from './Canaux';
+import Impacts from './Impacts';
 import * as Jquery from '../../node_modules/@types/jquery'
 //import {  } from '../../node_modules/@types/jquery'
 
@@ -18,6 +19,7 @@ import { VisualSettings } from '../settings';
 import { dataViewObjectsParser } from "powerbi-visuals-utils-dataviewutils";
 import DataViewObjectsParser = dataViewObjectsParser.DataViewObjectsParser;
 import { render } from 'react-dom';
+import Instances from './Instances';
 
 export interface Props {
     canaux: string,
@@ -155,6 +157,8 @@ export class Main extends React.Component<{}, State> {
             fontSize: '12',
             color: 'white',
             float: 'left',
+            height : '100%',
+            display: 'inline-flex'
         }
 
 
@@ -167,18 +171,21 @@ export class Main extends React.Component<{}, State> {
             fontSize: '12',
             color: 'black',
             float: 'right',
-            height : '15%',
+            height : '100%',
+            
 
         }
 
-        const aLign : React.CSSProperties = {}
+        const aLign : React.CSSProperties = {
+            height: '75px'
+        }
 
         return (
             <div id="infostyle" style={infostyle}>
                 <div style={canauxStyle}>
                     <Canaux></Canaux>
                 </div>
-                <div style={aLign}>
+                <div id='aLign' style={aLign}>
                     <div id="rowstyle" style={rowstyle}>
                         <Row></Row>
                     </div>
@@ -191,28 +198,28 @@ export class Main extends React.Component<{}, State> {
         );
     }
 
-    public static displayForm() {
-        var renderedOutput = arr.map((item) => <div> {item} </div>)
+    // public static displayForm() {
+    //     var renderedOutput = arr.map((item) => <div> {item} </div>)
 
-        return (
-            <div>
-                {renderedOutput}
-            </div>
-        );
-    }
+    //     return (
+    //         <div>
+    //             {renderedOutput}
+    //         </div>
+    //     );
+    // }
 
     private static updateCallback: (data: object) => void = null;
 
 
     public static update(newState: State) {
-        console.log("j'y suis");
-
         Canaux.update(newState);
         Row.update(newState);
         Channel.update(newState);
+        Impacts.update(newState);
+        Instances.update(newState);
+
 
         arr = newState.essaie.rows;
-        console.log(arr);
         // console.log(arr);
 
 
