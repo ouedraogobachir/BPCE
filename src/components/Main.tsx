@@ -114,7 +114,7 @@ export class Main extends React.Component<{}, State> {
             width: '100%',
             display: 'flex',
             //height : '100%',
-            border: 'solid 1px black'
+            //border: 'solid 1px black'
         }
 
         const calendartitle: React.CSSProperties = {
