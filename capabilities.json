@@ -1,0 +1,161 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Canaux",
+            "name": "Canaux",
+            "kind": "GroupingOrMeasure"
+        },
+        {
+            "displayName": "Date Accompagnement DEPLOY",
+            "name": "DateAccompagnementDEPLOY",
+            "kind": "GroupingOrMeasure"
+        },
+        {
+            "displayName": "Date Debut Periode",
+            "name": "DateDebutPeriode",
+            "kind": "GroupingOrMeasure"
+        },
+        {
+            "displayName": "Date Fin Periode",
+            "name": "DateFinPeriode",
+            "kind": "GroupingOrMeasure"
+        },
+        {
+            "displayName": "Date Generalisation Deploiement",
+            "name": "DateGeneralisationDeploiement",
+            "kind": "GroupingOrMeasure"
+        },
+        {
+            "displayName": "Impact Banque",
+            "name": "ImpactBanque",
+            "kind": "GroupingOrMeasure"
+        },
+        {
+            "displayName": "Impact Client",
+            "name": "ImpactClient",
+            "kind": "GroupingOrMeasure"
+        },
+        {
+            "displayName": "Index",
+            "name": "Index",
+            "kind": "GroupingOrMeasure"
+        },
+        {
+            "displayName": "Instance",
+            "name": "Instance",
+            "kind": "GroupingOrMeasure"
+        },
+        {
+            "displayName": "Titre",
+            "name": "Titre",
+            "kind": "GroupingOrMeasure"
+        }
+    ],
+    "objects": {
+        "dataPoint": {
+            "displayName": "Data colors",
+            "properties": {
+                "defaultColor": {
+                    "displayName": "Default color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "showAllDataPoints": {
+                    "displayName": "Show all",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fill": {
+                    "displayName": "Fill",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "fillRule": {
+                    "displayName": "Color saturation",
+                    "type": {
+                        "fill": {}
+                    }
+                },
+                "fontSize": {
+                    "displayName": "Text Size",
+                    "type": {
+                        "formatting": {
+                            "fontSize": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "table": {
+                "rows": {
+                    "select": [
+                        {
+                            "for": {
+                                "in": "Canaux"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "DateAccompagnementDEPLOY"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "DateDebutPeriode"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "DateFinPeriode"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "DateGeneralisationDeploiement"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "ImpactBanque"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "ImpactClient"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "Index"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "Instance"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "Titre"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
