@@ -30,19 +30,21 @@ class Row extends React.Component<Props, State> {
         // this.state = { :  };
     }
     render() {
+
         const impactsStyle: React.CSSProperties = {
             width: '10%',
-            //float: 'right'
+            verticalAlign: 'middle',
+            display: 'table-cell',
+            float: 'right',
+            height: '100%'
         }
 
         const instancesStyle: React.CSSProperties = {
-            width: '10%',
-            //float: 'left'
+            width: '10%'
         }
 
         const titleStyle: React.CSSProperties = {
             width: '80%',
-            //display: 'flex',
             justifyContent: 'center'
         }
 
@@ -57,7 +59,7 @@ class Row extends React.Component<Props, State> {
                 <div style={impactsStyle}>
                     <Impacts></Impacts>
                 </div>
-            </React.Fragment>
+            </React.Fragment >
         );
     }
 

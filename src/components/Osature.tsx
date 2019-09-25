@@ -8,7 +8,7 @@ export interface Props {
 }
 
 export interface State {
-    
+
 }
 
 export const props = {
@@ -25,35 +25,28 @@ export class Osature extends React.Component<{}, State> {
     render() {
 
         const plannindDeployYear: React.CSSProperties = {
-
             width: '100%',
             height: '100%',
             display: 'flex'
         }
 
-        const trimestreStyle: React.CSSProperties = {
-            display: 'flex',
-            backgroundColor: "orange",
-            position: 'sticky',
-            top: 0,
-            width: '75%'
-        }
-
         const trimestreStyleEven: React.CSSProperties = {
-            display: 'flex',
             backgroundColor: "lightgrey",
             position: 'sticky',
             top: 0,
             width: '100%',
-            border: '1px black'
+            border: '1px black',
+            textAlign: 'center',
+            fontSize: 'smaller'
         }
 
         const trimestreStyleOdd: React.CSSProperties = {
-            display: 'flex',
             backgroundColor: "white",
             position: 'sticky',
             top: 0,
             width: '100%',
+            textAlign: 'center',
+            fontSize: 'smaller'
 
         }
 
@@ -61,11 +54,6 @@ export class Osature extends React.Component<{}, State> {
             backgroundColor: "cyan",
             display: 'flex',
             width: '25%'
-        }
-
-        const textAlign: React.CSSProperties = {
-            display: "flex"
-
         }
 
         const grey: React.CSSProperties = {
@@ -79,13 +67,11 @@ export class Osature extends React.Component<{}, State> {
             backgroundColor: 'white',
             width: '100%',
             paddingBottom: '100%'
-            //height : '100%'
         }
 
         const trimestretitle: React.CSSProperties = {
             width: '100%',
             display: 'flex',
-            //height : '100%',
             border: 'solid 1px black'
         }
 
@@ -94,17 +80,6 @@ export class Osature extends React.Component<{}, State> {
             height: '100%'
         }
 
-        const infostyle: React.CSSProperties = {
-            zIndex: 50,
-            position: 'absolute',
-
-        }
-
-        const canauxStyle: React.CSSProperties = {
-            width: '25%',
-            height: '5%',
-            backgroundColor: 'red'
-        }
         return (
             <div id='infostyle'>
                 <div style={plannindDeployYear}>
@@ -112,10 +87,10 @@ export class Osature extends React.Component<{}, State> {
 
                     <div style={calendartitle}>
                         <div style={trimestretitle}>
-                            <div style={trimestreStyleOdd}>1er T</div>
-                            <div style={trimestreStyleEven}>2eme T</div>
-                            <div style={trimestreStyleOdd}>3eme T</div>
-                            <div style={trimestreStyleEven}>4eme T</div>
+                            <div style={trimestreStyleOdd}>1er trimestre</div>
+                            <div style={trimestreStyleEven}>2eme trimestre</div>
+                            <div style={trimestreStyleOdd}>3eme trimestre</div>
+                            <div style={trimestreStyleEven}>4eme trimestre</div>
                         </div>
                         <div style={trimestretitle}>
                             <div style={grey}> </div>
@@ -154,3 +129,5 @@ export class Osature extends React.Component<{}, State> {
         Osature.updateCallback = null;
     }
 }
+
+export default Osature;

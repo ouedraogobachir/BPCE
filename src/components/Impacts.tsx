@@ -32,27 +32,22 @@ class Impacts extends React.Component<Props, State> {
     }
     render() {
 
-        var alignVertical: React.CSSProperties = {
-            verticalAlign: 'middle',
-            display: 'table-cell'
+        var cBStyle: React.CSSProperties = {
+            backgroundColor: cBColor
         }
-
-        var cBStyle : React.CSSProperties = {
-            backgroundColor : cBColor
+        var iBStyle: React.CSSProperties = {
+            backgroundColor: iBColor
         }
-        var iBStyle : React.CSSProperties = {
-            backgroundColor : iBColor
-        }
-        var iCStyle : React.CSSProperties = {
-            backgroundColor : iCColor
+        var iCStyle: React.CSSProperties = {
+            backgroundColor: iCColor
         }
 
         return (
-            <div style={alignVertical}>
+            <React.Fragment>
                 <div style={cBStyle} id='cB'>cB</div>
                 <div style={iBStyle} id='iB'>iB</div>
                 <div style={iCStyle} id='iC'>iC</div>
-            </div>
+            </React.Fragment>
         );
     }
 
@@ -60,60 +55,49 @@ class Impacts extends React.Component<Props, State> {
 
     public static update(newState: State) {
         //Gestion Couleur iB
-        if(newState.essaie.rows[0][1] == 0)
-        {
+        if (newState.essaie.rows[0][1] == 0) {
             iBColor = 'green'
         }
 
-        if(newState.essaie.rows[0][1] == 1)
-        {
+        if (newState.essaie.rows[0][1] == 1) {
             iBColor = 'yellow'
         }
 
-        if(newState.essaie.rows[0][1] == 2)
-        {
+        if (newState.essaie.rows[0][1] == 2) {
             iBColor = 'orange'
         }
 
-        if(newState.essaie.rows[0][1] == 3)
-        {
+        if (newState.essaie.rows[0][1] == 3) {
             iBColor = 'red'
         }
 
 
         //Gestion Couleur cB
-        if(newState.essaie.rows[0][2] == 0)
-        {
+        if (newState.essaie.rows[0][2] == 0) {
             iCColor = 'green'
         }
 
-        if(newState.essaie.rows[0][2] == 1)
-        {
+        if (newState.essaie.rows[0][2] == 1) {
             iCColor = 'yellow'
         }
 
-        if(newState.essaie.rows[0][2] == 2)
-        {
+        if (newState.essaie.rows[0][2] == 2) {
             iCColor = 'orange'
         }
 
-        if(newState.essaie.rows[0][2] == 3)
-        {
+        if (newState.essaie.rows[0][2] == 3) {
             iCColor = 'red'
         }
 
         //Gestion Couleur cB
         var diffdate = Impacts.DateDiff(newState.essaie.rows[0][7], newState.essaie.rows[0][8]);
-        if(diffdate < 15)
-        {
+        if (diffdate < 15) {
             cBColor = 'green'
         }
-        if(diffdate => 15 && diffdate <= 50)
-        {
+        if (diffdate => 15 && diffdate <= 50) {
             cBColor = 'yellow'
         }
-        if(diffdate > 50)
-        {
+        if (diffdate > 50) {
             cBColor = 'red'
         }
 
@@ -123,13 +107,10 @@ class Impacts extends React.Component<Props, State> {
         }
     }
 
-    public static DateDiff(Date1, Date2)
-    {
+    public static DateDiff(Date1, Date2) {
         var date1, date2;
         date1 = new Date(Date1);
-        console.log("DATE1 " + date1)
-        date2 = new Date( Date2 );
-        console.log("DATE2 " + date2)
+        date2 = new Date(Date2);
         // get total seconds between two dates
         var res = Math.abs(date1 - date2) / 1000;
         var days = Math.floor(res / 86400);

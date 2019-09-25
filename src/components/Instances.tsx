@@ -29,8 +29,9 @@ class Instances extends React.Component<Props, State> {
     }
     render() {
 
-        var cBStyle : React.CSSProperties = {
-            backgroundColor : instanceColor
+        var cBStyle: React.CSSProperties = {
+            backgroundColor: instanceColor,
+            height: '100%'
         }
 
         return (
@@ -44,28 +45,22 @@ class Instances extends React.Component<Props, State> {
 
     public static update(newState: State) {
         instance = newState.essaie.rows[0][4].toString();
-        if (instance == 'Marché des particuliers et des patrimoniaux' || instance == 'Entreprises, professionnels et institutionnels')
-        {
+        if (instance == 'Marché des particuliers et des patrimoniaux' || instance == 'Entreprises, professionnels et institutionnels') {
             instanceColor = '#ff0c87'
         }
-        if (instance == 'Digital')
-        {
+        if (instance == 'Digital') {
             instanceColor = '#6d28da'
         }
-        if (instance == 'Finances & comptabilité')
-        {
+        if (instance == 'Finances & comptabilité') {
             instanceColor = '#3a1dd8'
         }
-        if (instance == "Informatique d'entreprise")
-        {
+        if (instance == "Informatique d'entreprise") {
             instanceColor = '#47ccf4'
         }
-        if (instance == 'Moyens de paiement & échanges')
-        {
+        if (instance == 'Moyens de paiement & échanges') {
             instanceColor = '#3ade8b'
         }
-        if (instance == 'Risques & conformité')
-        {
+        if (instance == 'Risques & conformité') {
             instanceColor = '#06875d'
         }
 
