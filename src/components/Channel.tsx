@@ -42,18 +42,22 @@ class Channel extends React.Component<Props, State> {
             marginRight: fin,
             height: '40px',
             position: 'fixed',
-            zIndex: 60
+            zIndex: 60,
+            marginTop: '1%'
         }
 
         var periodeStyle: React.CSSProperties = {
             marginLeft: position,
             width: period,
-            height: '40px',
+            // width: fin,
+            height: '30px',
+            marginTop: '2%'
         }
 
         var accompagnementStyle: React.CSSProperties = {
             height: "50px",
-            position: 'fixed'
+            position: 'fixed',
+            marginTop: '1%'
         }
 
         return (

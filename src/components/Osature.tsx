@@ -35,9 +35,12 @@ export class Osature extends React.Component<{}, State> {
             position: 'sticky',
             top: 0,
             width: '100%',
-            border: '1px black',
+            //border: '1px black',
             textAlign: 'center',
-            fontSize: 'smaller'
+            fontSize: 'smaller',
+            fontWeight: 'bold',
+            color: 'white',
+            boxShadow: '1px 1px 12px #555'
         }
 
         const trimestreStyleOdd: React.CSSProperties = {
@@ -46,7 +49,10 @@ export class Osature extends React.Component<{}, State> {
             top: 0,
             width: '100%',
             textAlign: 'center',
-            fontSize: 'smaller'
+            fontSize: 'smaller',
+            fontWeight: 'bold',
+            color: 'lightgrey',
+            boxShadow: '1px 1px 12px #555'
 
         }
 
@@ -72,7 +78,9 @@ export class Osature extends React.Component<{}, State> {
         const trimestretitle: React.CSSProperties = {
             width: '100%',
             display: 'flex',
-            border: 'solid 1px black'
+            //border: 'solid 1px black'
+            
+            boxShadow: '1px 3px 12px #555'
         }
 
         const calendartitle: React.CSSProperties = {

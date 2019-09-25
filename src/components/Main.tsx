@@ -58,7 +58,8 @@ export class Main extends React.Component<{}, State> {
 
         const canauxStyle: React.CSSProperties = {
             width: '25%',
-            backgroundColor: '#00009a'
+            backgroundColor: '#00009a',
+            fontWeight: 'bold'
         }
 
         const rowstyle: React.CSSProperties = {
