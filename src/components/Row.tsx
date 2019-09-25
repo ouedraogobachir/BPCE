@@ -48,16 +48,33 @@ class Row extends React.Component<Props, State> {
             justifyContent: 'center'
         }
 
+        const rowBlocStyle: React.CSSProperties = {
+            width: '90%',
+            textAlign : 'center',
+            zIndex: 50,
+            position: 'relative',
+            backgroundColor: 'white',
+            //width: '25%',
+            fontSize: '12',
+            color: 'blue',
+            //float: 'left',
+            height: '100%',
+            display: 'inline-flex',
+            boxShadow: '1px 1px 12px #555'
+        }
+
         return (
             <React.Fragment>
-                <div style={instancesStyle}>
-                    <Instances></Instances>
-                </div>
-                <div style={titleStyle}>
-                    {row}
-                </div>
-                <div style={impactsStyle}>
-                    <Impacts></Impacts>
+                <div style={rowBlocStyle}>
+                    <div style={instancesStyle}>
+                        <Instances></Instances>
+                    </div>
+                    <div style={titleStyle}>
+                        {row}
+                    </div>
+                    <div style={impactsStyle}>
+                        <Impacts></Impacts>
+                    </div>
                 </div>
             </React.Fragment >
         );

@@ -33,13 +33,22 @@ class Impacts extends React.Component<Props, State> {
     render() {
 
         var cBStyle: React.CSSProperties = {
-            backgroundColor: cBColor
+            backgroundColor: cBColor,
+            color: 'white',
+            fontWeight: 'bold',
+            height: '20px'
         }
         var iBStyle: React.CSSProperties = {
-            backgroundColor: iBColor
+            backgroundColor: iBColor,
+            color: 'white',
+            fontWeight: 'bold',
+            height: '20px'
         }
         var iCStyle: React.CSSProperties = {
-            backgroundColor: iCColor
+            backgroundColor: iCColor,
+            color: 'white',
+            fontWeight: 'bold',
+            height: '20px'
         }
 
         return (
@@ -60,12 +69,12 @@ class Impacts extends React.Component<Props, State> {
         }
 
         if (newState.essaie.rows[0][1] == 1) {
-            iBColor = 'yellow'
+            iBColor = '#ffb100'
         }
 
-        if (newState.essaie.rows[0][1] == 2) {
-            iBColor = 'orange'
-        }
+        // if (newState.essaie.rows[0][1] == 2) {
+        //     iBColor = 'orange'
+        // }
 
         if (newState.essaie.rows[0][1] == 3) {
             iBColor = 'red'
@@ -78,12 +87,12 @@ class Impacts extends React.Component<Props, State> {
         }
 
         if (newState.essaie.rows[0][2] == 1) {
-            iCColor = 'yellow'
+            iCColor = '#ffb100'
         }
 
-        if (newState.essaie.rows[0][2] == 2) {
-            iCColor = 'orange'
-        }
+        // if (newState.essaie.rows[0][2] == 2) {
+        //     iCColor = 'orange'
+        // }
 
         if (newState.essaie.rows[0][2] == 3) {
             iCColor = 'red'
@@ -95,7 +104,7 @@ class Impacts extends React.Component<Props, State> {
             cBColor = 'green'
         }
         if (diffdate => 15 && diffdate <= 50) {
-            cBColor = 'yellow'
+            cBColor = '#ffb100'
         }
         if (diffdate > 50) {
             cBColor = 'red'

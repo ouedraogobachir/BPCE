@@ -21,6 +21,9 @@ export const initialeState: State = {
 
 var instance = '';
 var instanceColor = '';
+const linkFDD = require("../media/LinkFDD.png");
+const maj = require("../media/MAJ.png");
+const newproject = require("../media/new.png");
 
 class Instances extends React.Component<Props, State> {
     constructor(props: Props) {
@@ -29,14 +32,33 @@ class Instances extends React.Component<Props, State> {
     }
     render() {
 
-        var cBStyle: React.CSSProperties = {
+        var InstanceStyle: React.CSSProperties = {
             backgroundColor: instanceColor,
             height: '100%'
         }
 
+        var linkStyle: React.CSSProperties = {
+            height: '28px',
+        }
+
+        var MAJStyle: React.CSSProperties = {
+            height: '30px',
+        }
+
+        var newStyle: React.CSSProperties = {
+            height: '30px',
+        }
+
+
         return (
-            <div style={cBStyle} id='instace'>
-                {instance}
+            <div style={InstanceStyle} id='instace'>
+                {/* {instance} */}
+                <div>
+                    <img style={newStyle} src={newproject}></img>
+                </div>
+                <div>
+                    <img style={linkStyle} src={linkFDD}></img>
+                </div>
             </div>
         );
     }
@@ -62,6 +84,9 @@ class Instances extends React.Component<Props, State> {
         }
         if (instance == 'Risques & conformité') {
             instanceColor = '#06875d'
+        }
+        else{
+            instanceColor = 'brown'
         }
 
 

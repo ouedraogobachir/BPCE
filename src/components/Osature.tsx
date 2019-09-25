@@ -51,7 +51,7 @@ export class Osature extends React.Component<{}, State> {
         }
 
         const instanceStyle: React.CSSProperties = {
-            backgroundColor: "cyan",
+            backgroundColor: "#e0dddd",
             display: 'flex',
             width: '25%'
         }

@@ -22,18 +22,19 @@ class Header extends React.Component<Props, State> {
             width: "25%",
             display : "flex",
             justifyContent : "space-between",
-            backgroundColor : 'orange'
+            backgroundColor : 'white'
 
         }
         const plannindDeployTitle: React.CSSProperties = {
             fontSize: "16px",
             flex : "left",
-            color : "grey"
+            color : "grey",
+            fontWeight: 'bold'
         }
         const plannindDeployYear: React.CSSProperties = {
             fontSize : "20px",
             flex : "right",
-            color : "lightblue",
+            color : "#36a3f0",
             fontWeight : "bold"
         }
 

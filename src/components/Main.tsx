@@ -58,26 +58,25 @@ export class Main extends React.Component<{}, State> {
 
         const canauxStyle: React.CSSProperties = {
             width: '25%',
-            backgroundColor: 'red'
+            backgroundColor: '#00009a'
         }
 
         const rowstyle: React.CSSProperties = {
             zIndex: 50,
             position: 'relative',
-            backgroundColor: '#3c42fc',
+            //backgroundColor: 'white',
             width: '25%',
             fontSize: '12',
-            color: 'white',
+            color: 'blue',
             float: 'left',
             height: '100%',
-            display: 'inline-flex'
+            //display: 'inline-flex'
         }
 
         const channelstyle: React.CSSProperties = {
             zIndex: 50,
             position: 'relative',
             backgroundColor: '',
-            opacity: 0.5,
             width: '75%',
             fontSize: '12',
             color: 'black',
@@ -87,7 +86,8 @@ export class Main extends React.Component<{}, State> {
         }
 
         const aLign: React.CSSProperties = {
-            height: '75px'
+            marginTop: '0.5%',
+            height: '60px'
         }
 
         return (
