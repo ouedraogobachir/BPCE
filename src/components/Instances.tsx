@@ -52,7 +52,6 @@ class Instances extends React.Component<Props, State> {
 
         return (
             <div style={InstanceStyle} id='instace'>
-                {/* {instance} */}
                 <div>
                     <img style={newStyle} src={newproject}></img>
                 </div>
@@ -85,7 +84,7 @@ class Instances extends React.Component<Props, State> {
         if (instance == 'Risques & conformité') {
             instanceColor = '#06875d'
         }
-        else{
+        else {
             instanceColor = 'brown'
         }
 

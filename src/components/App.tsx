@@ -28,11 +28,19 @@ class App extends React.Component<Props, State> {
         super(props);
         // this.state = { :  };
     }
+
     render() {
+
+        const border: React.CSSProperties = {
+            border: 'solid 1px grey'
+        }
+
         return (
             <React.Fragment>
-                <Header></Header>
-                <Osature></Osature>
+                <div style={border}>
+                    <Header></Header>
+                    <Osature></Osature>
+                </div>
             </React.Fragment>
         );
     }

@@ -78,8 +78,6 @@ export class Osature extends React.Component<{}, State> {
         const trimestretitle: React.CSSProperties = {
             width: '100%',
             display: 'flex',
-            //border: 'solid 1px black'
-            
             boxShadow: '1px 3px 12px #555'
         }
 

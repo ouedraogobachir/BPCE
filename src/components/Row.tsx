@@ -54,10 +54,8 @@ class Row extends React.Component<Props, State> {
             zIndex: 50,
             position: 'relative',
             backgroundColor: 'white',
-            //width: '25%',
             fontSize: '12',
             color: 'blue',
-            //float: 'left',
             height: '100%',
             display: 'inline-flex',
             boxShadow: '1px 1px 12px #555'

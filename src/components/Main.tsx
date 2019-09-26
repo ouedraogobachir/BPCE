@@ -65,13 +65,11 @@ export class Main extends React.Component<{}, State> {
         const rowstyle: React.CSSProperties = {
             zIndex: 50,
             position: 'relative',
-            //backgroundColor: 'white',
             width: '25%',
             fontSize: '12',
             color: 'blue',
             float: 'left',
-            height: '100%',
-            //display: 'inline-flex'
+            height: '100%'
         }
 
         const channelstyle: React.CSSProperties = {
@@ -88,7 +86,8 @@ export class Main extends React.Component<{}, State> {
 
         const aLign: React.CSSProperties = {
             marginTop: '0.5%',
-            height: '60px'
+            height: '60px',
+            border: 'dashed 1px grey'
         }
 
         return (
