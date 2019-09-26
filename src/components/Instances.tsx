@@ -78,7 +78,7 @@ class Instances extends React.Component<Props, State> {
         if (instance == "Informatique d'entreprise") {
             instanceColor = '#47ccf4'
         }
-        if (instance == 'Moyens de paiement & échanges') {o
+        if (instance == 'Moyens de paiement & échanges') {
             instanceColor = '#3ade8b'
         }
         if (instance == 'Risques & conformité') {
