@@ -15,24 +15,27 @@ class Header extends React.Component<Props, State> {
         // this.state = { :  };
     }
     render() {
+
         const textAlign: React.CSSProperties = {
             display: "flex"
         }
+
         const plannindDeployHeader: React.CSSProperties = {
             width: "25%",
             display: "flex",
             justifyContent: "space-between",
             backgroundColor: 'white'
-
         }
+
         const plannindDeployTitle: React.CSSProperties = {
             fontSize: "16px",
             flex: "left",
-            color: "grey",
+            color: "lightgrey",
             fontWeight: 'bold'
         }
+
         const plannindDeployYear: React.CSSProperties = {
-            fontSize: "20px",
+            fontSize: "23px",
             flex: "right",
             color: "#36a3f0",
             fontWeight: "bold"
@@ -40,16 +43,14 @@ class Header extends React.Component<Props, State> {
 
         const calendarStyle: React.CSSProperties = {
             width: "75%",
-
             display: 'flex'
-            //backgroundColor : 'green'
         }
+        
         const trimestreStyleEven: React.CSSProperties = {
             backgroundColor: "lightgrey",
             position: 'sticky',
             top: 0,
             width: '100%',
-            //border: '1px black',
             textAlign: 'center',
             fontSize: 'smaller',
             fontWeight: 'bold',
@@ -67,13 +68,12 @@ class Header extends React.Component<Props, State> {
             fontWeight: 'bold',
             color: 'lightgrey',
             boxShadow: '1px 1px 12px #555'
-
         }
 
         return (
             <div style={textAlign}>
                 <div style={plannindDeployHeader}>
-                    <div style={plannindDeployTitle}>Demarrages Banques</div>
+                    <div style={plannindDeployTitle}>Démarrages Banques</div>
                     <div style={plannindDeployYear}>2019</div>
                 </div>
                 <div style={calendarStyle}>

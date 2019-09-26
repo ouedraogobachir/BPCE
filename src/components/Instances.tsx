@@ -49,7 +49,6 @@ class Instances extends React.Component<Props, State> {
             height: '30px',
         }
 
-
         return (
             <div style={InstanceStyle} id='instace'>
                 <div>
@@ -65,6 +64,7 @@ class Instances extends React.Component<Props, State> {
     private static updateCallback: (data: object) => void = null;
 
     public static update(newState: State) {
+        //gestion couleur instance
         instance = newState.essaie.rows[0][4].toString();
         if (instance == 'Marché des particuliers et des patrimoniaux' || instance == 'Entreprises, professionnels et institutionnels') {
             instanceColor = '#ff0c87'
@@ -78,7 +78,7 @@ class Instances extends React.Component<Props, State> {
         if (instance == "Informatique d'entreprise") {
             instanceColor = '#47ccf4'
         }
-        if (instance == 'Moyens de paiement & échanges') {
+        if (instance == 'Moyens de paiement & échanges') {o
             instanceColor = '#3ade8b'
         }
         if (instance == 'Risques & conformité') {

@@ -38,12 +38,14 @@ class Impacts extends React.Component<Props, State> {
             fontWeight: 'bold',
             height: '20px'
         }
+
         var iBStyle: React.CSSProperties = {
             backgroundColor: iBColor,
             color: 'white',
             fontWeight: 'bold',
             height: '20px'
         }
+
         var iCStyle: React.CSSProperties = {
             backgroundColor: iCColor,
             color: 'white',
@@ -80,7 +82,6 @@ class Impacts extends React.Component<Props, State> {
             iBColor = 'red'
         }
 
-
         //Gestion Couleur cB
         if (newState.essaie.rows[0][2] == 0) {
             iCColor = 'green'
@@ -103,9 +104,11 @@ class Impacts extends React.Component<Props, State> {
         if (diffdate < 15) {
             cBColor = 'green'
         }
+
         if (diffdate => 15 && diffdate <= 50) {
             cBColor = '#ffb100'
         }
+        
         if (diffdate > 50) {
             cBColor = 'red'
         }

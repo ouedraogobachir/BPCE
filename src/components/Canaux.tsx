@@ -28,8 +28,7 @@ class Canaux extends React.Component<Props, State> {
         super(props);
         // this.state = { :  };
     }
-    render() { 
-
+    render() {
       return ( 
         <div> {canaux} </div>
       );

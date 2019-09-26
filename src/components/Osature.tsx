@@ -35,7 +35,6 @@ export class Osature extends React.Component<{}, State> {
             position: 'sticky',
             top: 0,
             width: '100%',
-            //border: '1px black',
             textAlign: 'center',
             fontSize: 'smaller',
             fontWeight: 'bold',
@@ -53,7 +52,6 @@ export class Osature extends React.Component<{}, State> {
             fontWeight: 'bold',
             color: 'lightgrey',
             boxShadow: '1px 1px 12px #555'
-
         }
 
         const instanceStyle: React.CSSProperties = {
