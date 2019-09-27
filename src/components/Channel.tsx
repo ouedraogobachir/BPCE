@@ -49,7 +49,6 @@ class Channel extends React.Component<Props, State> {
         var periodeStyle: React.CSSProperties = {
             marginLeft: position,
             width: period,
-            // width: fin,
             height: '30px',
             marginTop: '2%'
         }
